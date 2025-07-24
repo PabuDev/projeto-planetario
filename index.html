@@ -3,80 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-font.css">
-    <link rel="stylesheet" href="style-img.css">
-    <title>Planets</title>
+    <link rel="stylesheet" href="style-2.css">
+    <title>Planetário</title>
 </head>
 <body>
-    <section>
-            <header class="cabecalho-one">
-                <h1 class="titulo-one">Planetário</h1>
-                <nav class="menu">
-                <a href="#">Home</a>
-                <a href="#">Planetas</a>
-                <a href="#">Satélites</a>
-                <a href="#">Ajuda</a>
-                <a href="#titulo-sobre">Sobre</a>
-            </nav>
-            </header>
-        </section>
-    '<div class="background-two">
-        <main class="estrutura">
-            <section>
-                <header>
-                    <h2 class="titulo-two">Sistema Solar</h2>
+    <header class="cabecalho">
+        <h1 class="titulo-principal">
+            Curiosidades sobre Astronomia
+        </h1>
+        <p>
+            Tudo o que você precisa saber sobre os planetas do nosso sistema solar e seus satélites naturais.
+        </p>
+    </header>
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">Planetas</a>
+        <a href="#">Satélites</a>
+        <a href="#">Ajuda</a>
+        <a href="#">Sobre</a>
+    </nav>
+    <main>
+        <article>
+            <h1>
+                Sistema Solar
+            </h1>
+            <p>
+                Nosso sistema solar está localizado na Via Láctea, uma galáxia espiral barrada com dois braços principais e dois braços secundários. Nosso Sol está em um pequeno braço parcial da Via Láctea chamado Braço de Órion, ou Esporão de Órion, entre os braços de Sagitário e Perseu. Nosso sistema solar orbita o centro da galáxia a cerca de 828.000 km/h. Leva cerca de 230 milhões de anos para completar uma órbita ao redor do centro galáctico.
+            </p>
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/capa-400px.jpg" class="img-pequeno"> 
+                <img src="imagens/capa-600px.jpg" alt="sistema solar">
+            </picture>
+            <p>
+                Nosso sistema solar inclui o Sol, oito planetas, cinco planetas anões oficialmente nomeados, centenas de luas e milhares de asteroides e cometas.
+            </p>
+            <h2>
+                Formação do Sistema Solar
+            </h2>
+            <p>
+                Nosso sistema solar se formou há cerca de 4,6 bilhões de anos a partir de uma densa nuvem de gás e poeira interestelar. A nuvem entrou em colapso, possivelmente devido à onda de choque de uma estrela próxima em explosão, chamada supernova. Quando essa nuvem de poeira entrou em colapso, formou uma nebulosa solar – um disco giratório e espiralado de material.
+            </p>
+            <p>
+                No centro, a gravidade puxava cada vez mais material. Eventualmente, a pressão no núcleo era tão grande que os átomos de hidrogênio começaram a se combinar e formar hélio, liberando uma quantidade enorme de energia. Com isso, o nosso Sol nasceu, e acabou acumulando mais de 99% da matéria disponível
+            </p>
+            <picture>
+                <source media="(max-width: 700px )" srcset="imagens/solar-system-320px.png" class="img-pequeno">
+                <img src="imagens/solar-system-600px.png" alt="">
+            </picture>
+            <p>
+                A matéria mais distante no disco também estava se aglomerando. Esses aglomerados colidiam uns com os outros, formando objetos cada vez maiores. Alguns deles cresceram o suficiente para que sua gravidade os moldasse em esferas, tornando-se planetas, planetas anões e grandes luas. Em outros casos, planetas não se formaram: o cinturão de asteroides é feito de pedaços do sistema solar primitivo que nunca poderiam se unir completamente em um planeta. Outros pedaços menores restantes se tornaram asteroides, cometas, meteoroides e pequenas luas irregulares.
+            </p>
+            <div class="video-responsivo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gr34aHo9VEc?si=VBEejlnl-fsUmNgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </article>
+            <aside>
+                <header class="curiosidade">
+                    <h3>
+                        Saiba Mais:
+                    </h3>
                 </header>
                 <p>
-                    O Sistema Solar é um conjunto de corpos celestes que orbitam o Sol, incluindo oito planetas, satélites, asteroides, cometas e outros objetos menores. Os planetas, em ordem de distância do Sol, são Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno. O Sol é a estrela central do sistema, e sua massa corresponde a cerca de 99,8% da massa total do Sistema Solar.
+                    Potencial para vida em outros planetas: Até agora, só conhecemos vida na Terra, mas a NASA está procurando vida em outros mundos em nosso sistema solar e além. 
                 </p>
-            </section>
-            <div>
-            <picture>
-                <source media="(max-width: 800px)" srcset="imagens/sistema-solar-2/solar-400px.jpg" type="image/jpg">
-                <img src="imagens/sistema-solar-2/solar-600px.jpg" alt="sistema solar" class="imagem-two">
-            </picture>
-        </div>
-        <article>
-            <h3>Composição do Sistema Solar</h3>
-            <ul>
-                <li>Planetas Anões: Ceres, Plutão, Haumea, Makemake e Eris. Satélites: Luas que orbitam os planetas.</li>
-                <li><strong>Oito Planetas</strong>: <a href="#">Mercúrio</a>, <a href="#">Vênus</a>, <a href="#">Terra</a>, <a href="#">Marte</a>, <a href="#">Júpiter</a>, <a href="#">Saturno</a>, <a href="#">Urano</a> e <a href="#">Netuno</a>.</li>
-                <li>Cometas: Formados por gelo e poeira, com órbitas alongadas.</li>
-                <li>Asteroides: Corpos rochosos menores que orbitam o Sol.</li>
-                <li>Outros corpos menores: Meteoroides e poeira interplanetária.</li>
-                <li>Satélites: Luas que orbitam os planetas.</li>
-            </ul>
-        </article>
-        <article>
-            <h3>Formação do Sistema Solar</h3>
+            </aside>
+        <article>    
+            <h2>
+                Luas
+            </h2>
             <p>
-                A teoria mais aceita para a formação do Sistema Solar é a Teoria da Nebulosa, que postula que o Sol e os planetas foram formados a partir de uma nuvem de gás e poeira. Essa nuvem colapsou sob sua própria gravidade, formando uma protoestrela no centro e discos de material ao redor, onde os planetas se condensaram.
+                Nosso sistema solar tem centenas de luas orbitando planetas, planetas anões e asteroides.
+            </p>
+            <p>
+                Dos oito planetas, Mercúrio e Vênus são os únicos sem luas, embora Vênus tenha um quase-satélite que foi  oficialmente chamado de Zoozve . 
+            </p>
+            <p>
+                Os planetas gigantes Júpiter e Saturno lideram a contagem de luas do nosso sistema solar. De certa forma, os enxames de luas ao redor desses mundos se assemelham a versões em miniatura do nosso sistema solar.
+            </p>
+            <p>
+                Plutão, menor que nossa lua, tem cinco luas em sua órbita, incluindo Caronte, uma lua tão grande que faz Plutão oscilar.
             </p>
         </article>
-        <article>
-            <h3>Curiosidades</h3>
-            <ul>
-            <li>O Sistema Solar está localizado em um dos braços espirais da Via Láctea, chamado Braço de Órion. </li>
-            <li>A idade do Sistema Solar é estimada em cerca de 4,6 bilhões de anos. </li>
-            <li>Plutão foi considerado um planeta até 2006, quando foi reclassificado como planeta anão pela União Astronômica Internacional.</li>
-        </ul>
-        </article>
-        </main>
-    </div>'
+        <aside>
+                <header class="curiosidade">
+                    <h3>
+                        Saiba Mais:
+                    </h3>
+                </header>
+                <p>
+                    Nosso sistema planetário é chamado de “sistema solar” porque usamos a palavra “solar” para descrever coisas relacionadas à nossa estrela, derivada da palavra latina para Sol, “solis”.
+                </p>
+            </aside>
+    </main>
     <footer class="rodape">
-        <h5 id="titulo-sobre">Sobre</h5>
-            <p>
-                Nós da Planets...
-            </p>
-            <hr>
-    <address>
-        <pre>
-    Grupo Facebook: 
-    Grupo WhatsApp:
-    Grupo Telegram: 
-        </pre>
-    </address>
+        <p>
+            &copy; 2023 Planetário. Todos os direitos reservados.
+        </p>
+        <p>
+            Desenvolvido por [Seu Nome]
+        </p>
     </footer>
 </body>
 </html>
