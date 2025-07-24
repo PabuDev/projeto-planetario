@@ -55,7 +55,7 @@ header p{
     font-size: 1.2rem;
     color: var(--cor2);
     margin: 10px 0px 10px 20px;
-    width: 600px;
+    max-width: 500px;
     margin-top: 10px;
     line-height: 1.2em;
 }
@@ -89,7 +89,7 @@ main{
     color: var(--cor1);
     min-width: 300px;
     max-width: 950px;
-    margin-left: 50px;
+    margin: auto;
     box-shadow: 1px 1px 1px var(--cor6);
     margin-bottom: 20px; 
 }
